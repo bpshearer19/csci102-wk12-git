@@ -46,3 +46,10 @@ def Intersection(players, players2):
         if player in players2:
             newList.append(player)
     return newList
+
+def NotIn(myList, myList2):
+    newList = []
+    for player in myList:
+        if player not in myList2:
+            newList.append(player)
+    return newList
