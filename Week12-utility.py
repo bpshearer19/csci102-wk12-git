@@ -25,3 +25,10 @@ def FindWordCount(myList, myString):
         if element == myString:
             count += 1
     return count
+
+def ScoreFinder(players, scores, name):
+    name = name.upper()
+    for i in range(len(players)):
+        if players[i].upper() == name:
+            return "OUTPUT " + players[i] + " got a score of " + str(scores[i])
+    return "OUTPUT player not found"
