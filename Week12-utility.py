@@ -18,3 +18,10 @@ def LoadFile(filename):
 
 def UpdateString(original, replacement, index):
     return "OUTPUT " + original[:index] + replacement + original[index + 1:]
+
+def FindWordCount(myList, myString):
+    count = 0
+    for element in myList:
+        if element == myString:
+            count += 1
+    return count
