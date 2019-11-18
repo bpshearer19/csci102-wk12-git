@@ -15,3 +15,6 @@ def LoadFile(filename):
 
     file.close()
     return lines
+
+def UpdateString(original, replacement, index):
+    return "OUTPUT " + original[:index] + replacement + original[index + 1:]
