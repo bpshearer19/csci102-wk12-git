@@ -1,3 +1,8 @@
+# https://github.com/bpshearer19/csci102-wk12-git
+# Brett Shearer
+# CSCI 102 - Section B
+# Week 12 Part B
+
 def PrintOutput(myString):
     return "OUTPUT " + myString
 
