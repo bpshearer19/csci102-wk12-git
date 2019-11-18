@@ -39,3 +39,10 @@ def Union(scores, players):
         if element not in scores:
             newList.append(element)
     return scores + newList
+
+def Intersection(players, players2):
+    newList = []
+    for player in players:
+        if player in players2:
+            newList.append(player)
+    return newList
