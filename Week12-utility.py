@@ -24,7 +24,7 @@ def FindWordCount(myList, myString):
     for element in myList:
         if element == myString:
             count += 1
-    return count
+    return "OUTPUT" + count
 
 def ScoreFinder(players, scores, name):
     name = name.upper()
@@ -34,22 +34,19 @@ def ScoreFinder(players, scores, name):
     return "OUTPUT player not found"
 
 def Union(scores, players):
-    newList = []
-    for element in players:
-        if element not in scores:
-            newList.append(element)
-    return scores + newList
+    newList = scores + players
+    return "OUTPUT" + newList
 
 def Intersection(players, players2):
     newList = []
     for player in players:
         if player in players2:
             newList.append(player)
-    return newList
+    return "OUTPUT" + newList
 
 def NotIn(myList, myList2):
     newList = []
     for player in myList:
         if player not in myList2:
             newList.append(player)
-    return newList
+    return "OUTPUT" + newList
